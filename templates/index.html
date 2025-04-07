@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compteurs Drôles</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Bienvenue sur les Compteurs Drôles !</h1>
+
+    <div class="counter">
+      <h2>Depuis combien de jours Mbappé n’a pas marqué de coup franc ?</h2>
+      <p id="mbappe-counter"></p>
+    </div>
+
+    <div class="counter">
+      <h2>Depuis combien de jours le PSG a été éliminé en LDC ?</h2>
+      <p id="psg-counter"></p>
+    </div>
+
+    <div class="counter">
+      <h2>Depuis combien de jours FIFA a sorti un patch ?</h2>
+      <p id="fifa-counter"></p>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
